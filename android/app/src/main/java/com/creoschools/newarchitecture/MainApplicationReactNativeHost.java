@@ -1,4 +1,4 @@
-package com.creo.newarchitecture;
+package com.creoschools.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.creo.BuildConfig;
-import com.creo.newarchitecture.components.MainComponentsRegistry;
-import com.creo.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.creoschools.BuildConfig;
+import com.creoschools.newarchitecture.components.MainComponentsRegistry;
+import com.creoschools.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

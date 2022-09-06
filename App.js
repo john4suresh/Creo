@@ -21,9 +21,11 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { extendTheme, NativeBaseProvider } from 'native-base';
 import { } from '@react-native-async-storage/async-storage';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import firebase from '@react-native-firebase/app';
 
 LogBox.ignoreLogs(['new NativeEventEmitter']); // Ignore log notification by message
 LogBox.ignoreLogs(['VirtualizedLists should never be nested']); // Ignore log "VirtualizedLists should never be nested"
+
 
 const toastConfig = {
   success: props => (
@@ -112,13 +114,29 @@ class App extends Component {
     isFirstLaunch: null,
   };
 
-  // async componentDidMount() {
-  //   // const deviceInfo = await getDeviceInfo();
-  //   this.syncImmediate();
-  //   setTimeout(() => {
-  //     this.setState({ appReady: true });
-  //   }, 2000);
-  // }
+  async componentDidMount() {
+    // const deviceInfo = await getDeviceInfo();
+    // this.syncImmediate();
+    // setTimeout(() => {
+    //   this.setState({ appReady: true });
+    // }, 2000);
+
+    let firebaseConfig = {
+      apiKey: "FIREBASE_API_KEY",
+      projectId: "FIREBASE_PROJECT_ID",
+      appId: "FIREBASE_APP_ID",
+      storageBucket: "FIREBASE_STORAGE_BUCKET",
+      authDomain: "FIREBASE_AUTH_DOMAIN",
+      databaseURL: "FIREBASE_DATABASE_URL",
+      messagingSenderId: "FIREBASE_MESSAGING_SENDER_ID",
+      measurementId: "FIREBASE_MEASUREMENT_ID",
+    };
+    if (firebase.apps.length === 0) {
+      firebase.initializeApp(firebaseConfig);
+    }
+    // firebase.analytics();
+
+  }
 
   // codePushStatusDidChange = syncStatus => {
   //   console.log('syncStatus------------->', syncStatus);

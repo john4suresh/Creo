@@ -7,5 +7,6 @@ export default {
   primaryMedium: 'Lato-Medium',
   primaryRegular: 'Lato',
   primarySemibold: 'Lato-Semibold',
+  primarySemiBold: 'Lato-Semibold',
   primaryThin: 'Lato-Thin',
 };

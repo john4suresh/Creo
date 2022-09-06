@@ -1,4 +1,4 @@
-package com.creo.newarchitecture.modules;
+package com.creoschools.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

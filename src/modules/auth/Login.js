@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { View, StatusBar, } from 'react-native';
+import { View, StatusBar, Text, } from 'react-native';
 import { colors, } from '../../styles'
 import styles, {
   Container,

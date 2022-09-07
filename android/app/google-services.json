@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386709430379",
+    "project_id": "alegra-314905",
+    "storage_bucket": "alegra-314905.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386709430379:android:4db5327cf0f357bd8d112e",
+        "android_client_info": {
+          "package_name": "com.creoschools"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386709430379-o8dar9ob9luav9cmsij5drmctust2g7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1DVKFHN3LC-N0V5JZVBsUF-d8T0-1LWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386709430379-o8dar9ob9luav9cmsij5drmctust2g7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

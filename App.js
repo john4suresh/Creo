@@ -114,29 +114,14 @@ class App extends Component {
     isFirstLaunch: null,
   };
 
-  async componentDidMount() {
+  // async componentDidMount() {
     // const deviceInfo = await getDeviceInfo();
     // this.syncImmediate();
     // setTimeout(() => {
     //   this.setState({ appReady: true });
     // }, 2000);
 
-    let firebaseConfig = {
-      apiKey: "FIREBASE_API_KEY",
-      projectId: "FIREBASE_PROJECT_ID",
-      appId: "FIREBASE_APP_ID",
-      storageBucket: "FIREBASE_STORAGE_BUCKET",
-      authDomain: "FIREBASE_AUTH_DOMAIN",
-      databaseURL: "FIREBASE_DATABASE_URL",
-      messagingSenderId: "FIREBASE_MESSAGING_SENDER_ID",
-      measurementId: "FIREBASE_MEASUREMENT_ID",
-    };
-    if (firebase.apps.length === 0) {
-      firebase.initializeApp(firebaseConfig);
-    }
-    // firebase.analytics();
-
-  }
+  // }
 
   // codePushStatusDidChange = syncStatus => {
   //   console.log('syncStatus------------->', syncStatus);

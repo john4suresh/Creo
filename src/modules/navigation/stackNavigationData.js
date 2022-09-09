@@ -3,6 +3,7 @@ import { TouchableOpacity, Image } from 'react-native';
 import { colors, fonts } from '../../styles';
 import TabNavigator from './MainTabNavigator';
 import Login from '../auth/Login';
+import HomeView from '../home/HomeView';
 
 
 
@@ -34,6 +35,10 @@ const StackNavigationData = [
     name: 'Login',
     component: Login,
   },
+  {
+    name: 'Home',
+    component: HomeView,
+  }
 ];
 
 export default StackNavigationData;

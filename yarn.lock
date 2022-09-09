@@ -8610,6 +8610,11 @@ react-native-otp-textinput@^0.0.7:
   dependencies:
     prop-types "^15.6.2"
 
+react-native-pager-view@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-pager-view/-/react-native-pager-view-6.0.0.tgz#e3706da1bb7e55bcd2644d770d36c8dd14b48690"
+  integrity sha512-0qUMUmA/Lhv76F+fbCcYB+iuODH6Lp6E1EYlXw+GM3Ns3FaKFtBaVYXKQSfNhqnTUg9YEOY3HuX+ZMKBSHwNbA==
+
 "react-native-parsed-text@https://github.com/EvanBacon/react-native-parsed-text.git":
   version "0.0.22"
   resolved "https://github.com/EvanBacon/react-native-parsed-text.git#c909f64ee437796fd1b047edd73146fc89edb796"
@@ -8710,6 +8715,11 @@ react-native-swiper-flatlist@^3.0.16:
   version "3.0.17"
   resolved "https://registry.yarnpkg.com/react-native-swiper-flatlist/-/react-native-swiper-flatlist-3.0.17.tgz#fd9ca81db7d2cc67f85265bf5d6a3b0771692679"
   integrity sha512-4sWHzMHhXohiePBtJcVwt/fYVLpKFab7H1bvUH8TI3iMFYTOlMaW2PerlTDqGSO1eLRc4BX1z3X6e1NYPoakMA==
+
+react-native-tab-view@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-3.1.1.tgz#1f8d7a835ab4f5b1b1407ec8dddc1053b53fa3c6"
+  integrity sha512-M5pRN6utQfytKWoKlKVzg5NbkYu308qNoW1khGTtEOTs1k14p2dHJ/BWOJoJYHKbPVUyZldbG9MFT7gUl4YHnw==
 
 react-native-text-size@4.0.0-rc.1:
   version "4.0.0-rc.1"
@@ -9188,6 +9198,13 @@ rn-fetch-blob@^0.12.0:
   dependencies:
     base-64 "0.1.0"
     glob "7.0.6"
+
+rn-tooltip@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/rn-tooltip/-/rn-tooltip-3.0.3.tgz#33232c76b90fc6d90ced565ddd5aab5517761a21"
+  integrity sha512-GWL4TCCPLu06CY/0aOYOx7GSbmwWZok9fYxrOcfE0OD3Z5hCY8lCJme0ivQj8ZnTk3IJyDAedc3fFH1I/J3NrQ==
+  dependencies:
+    deprecated-react-native-prop-types "^2.3.0"
 
 run-async@^2.4.0:
   version "2.4.1"

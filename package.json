@@ -59,6 +59,7 @@
     "react-native-modal-datetime-picker": "^13.1.2",
     "react-native-modal-dropdown": "^1.0.2",
     "react-native-otp-textinput": "^0.0.7",
+    "react-native-pager-view": "^6.0.0",
     "react-native-permissions": "^3.3.1",
     "react-native-pulse": "^1.0.7",
     "react-native-push-notification": "^8.1.1",
@@ -70,6 +71,7 @@
     "react-native-snap-carousel": "^3.9.1",
     "react-native-svg": "^12.3.0",
     "react-native-swiper-flatlist": "^3.0.16",
+    "react-native-tab-view": "^3.1.1",
     "react-native-toast-message": "^2.1.1",
     "react-native-ui-lib": "^6.11.0",
     "react-native-vector-icons": "^9.1.0",
@@ -83,6 +85,7 @@
     "redux-promise": "^0.6.0",
     "redux-thunk": "^2.4.1",
     "rn-fetch-blob": "^0.12.0",
+    "rn-tooltip": "^3.0.3",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {

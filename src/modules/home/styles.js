@@ -16,17 +16,14 @@ export const LabelText = styled.Text`
 
 export const Container = styled(LinearGradient).attrs(props => {
   return {
-    colors: isThemeObject(props.theme)
-      ? ['#19191B', '#19191B']
-      : ['#F2F6FF', '#B7D8FF'],
+    colors: ['#1D91EF', '#1259EF'],
     start: { x: 0, y: 0 },
     end: { x: 1, y: 0 },
-    angle: 180,
-    useAngle: isThemeObject(props.theme) ? false : true,
+    angle: 90,
+    useAngle: true,
   };
 })`
   flex: 1;
-  padding: 10px;
 `;
 
 export const DeviceContainer = styled.View`

@@ -36,14 +36,14 @@ const EventsData = [
 
 ]
 
-const Reports = () => {
-  const width = Dimensions.get('window').width * 0.125
+const Reports = ({ navigation }) => {
+  const width = Dimensions.get('window').width * 0.1
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={{ flex: 1 }}>
         <VStack space={3} style={{}}>
           <HStack justifyContent="space-between">
-            <IconGroup title="Attendance" icon={<Attendance width={width} height={width} />} />
+            <IconGroup title="Attendance" icon={<Attendance width={width} height={width} onPress={navigation.navigate('Attendance')} />} />
             <IconGroup title="Home Works" icon={<HomeWorks width={width} height={width} />} />
             <IconGroup title="Behaviour" icon={<Behaviour width={width} height={width} />} />
           </HStack>
@@ -104,8 +104,8 @@ const IconGroup = props => {
     <View style={{ marginTop: 10 }}>
       <Text style={{
         color: '#000000',
-        fontSize: 16,
-        lineHeight: 22,
+        fontSize: 14,
+        lineHeight: 18,
         fontFamily: fonts.primaryRegular,
       }}>{title}</Text>
     </View>

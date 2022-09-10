@@ -4,6 +4,7 @@ import { colors, fonts } from '../../styles';
 import TabNavigator from './MainTabNavigator';
 import Login from '../auth/Login';
 import HomeView from '../home/HomeView';
+import Attendance from '../home/Attendance';
 
 
 
@@ -36,9 +37,13 @@ const StackNavigationData = [
     component: Login,
   },
   {
-    name: 'Home',
+    name: 'HomeScreen',
     component: HomeView,
-  }
+  },
+  {
+    name: 'Attendance',
+    component: Attendance,
+  },
 ];
 
 export default StackNavigationData;

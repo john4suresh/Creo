@@ -34,7 +34,7 @@ const Login = ({
               </View>
               <View style={{ justifyContent: 'center', alignItems: 'center', marginVertical: 15 }}>
                 <Button style={{ backgroundColor: 'blue', width: '50%', marginBottom: 10 }}
-                  onPress={() => navigation.navigate('Home')}
+                  onPress={() => navigation.navigate('HomeScreen')}
                 >Login</Button>
                 <Text>Request Login Access</Text>
               </View>

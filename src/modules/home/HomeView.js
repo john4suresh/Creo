@@ -9,24 +9,11 @@ import { fonts } from '../../styles';
 import Reports from './Reports';
 import Events from './Events';
 
-const FirstRoute = () => <View style={{ flex: 1, padding: 20 }}>
-  <Reports />
-</View>;
-
-const SecondRoute = () => <View style={{ flex: 1, padding: 20 }}>
-  <Events />
-</View>;
-
-
 const initialLayout = {
   width: Dimensions.get('window').width
 };
-const renderScene = SceneMap({
-  reports: FirstRoute,
-  events: SecondRoute,
-});
 
-const HomeView = () => {
+const HomeView = ({ navigation }) => {
 
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([{
@@ -68,6 +55,19 @@ const HomeView = () => {
       </Box>
     </View>;
   };
+
+  const ReportRoute = () => <View style={{ flex: 1, padding: 20 }}>
+    <Reports navigation={navigation} />
+  </View>;
+
+  const EventRoute = () => <View style={{ flex: 1, padding: 20 }}>
+    <Events navigation={navigation} />
+  </View>;
+
+  const renderScene = SceneMap({
+    reports: ReportRoute,
+    events: EventRoute,
+  });
 
   return (
     <Container>

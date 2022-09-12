@@ -36,7 +36,7 @@ const EventsData = [
 
 ]
 
-const Reports = ({ navigation }) => {
+const Reports = ({ navigation, showEvents = true }) => {
   const width = Dimensions.get('window').width * 0.1
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
@@ -44,7 +44,7 @@ const Reports = ({ navigation }) => {
         <VStack space={3} style={{}}>
           <HStack justifyContent="space-between">
             <IconGroup title="Attendance" icon={<Attendance width={width} height={width} onPress={() => navigation.navigate('Attendance')} />} />
-            <IconGroup title="Home Works" icon={<HomeWorks width={width} height={width} />} />
+            <IconGroup title="Home Works" icon={<HomeWorks width={width} height={width} onPress={() => navigation.navigate('HomeWork')} />} />
             <IconGroup title="Behaviour" icon={<Behaviour width={width} height={width} />} />
           </HStack>
           <HStack justifyContent="space-between">
@@ -59,29 +59,29 @@ const Reports = ({ navigation }) => {
           </HStack>
 
         </VStack>
-        <Divider style={{ marginVertical: 30 }} />
-        <View>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-            <Text style={{
-              color: '#000000',
-              fontFamily: fonts.primaryBold,
-              fontSize: 16,
-              lineHeight: 20
-            }}>Events on August 9, 2022</Text>
-            <Text
-              style={{
+        {showEvents ? <><Divider style={{ marginVertical: 30 }} />
+          <View>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+              <Text style={{
                 color: '#000000',
                 fontFamily: fonts.primaryBold,
-                fontSize: 14,
-                lineHeight: 18,
-                borderBottomWidth: 1
-              }}
-            >View All</Text>
-          </View>
-          <View>
-            {EventsData.map(obj => <ListItem key={obj.id} title={obj.title} subTitle={obj.subTitle} />)}
-          </View>
-        </View>
+                fontSize: 16,
+                lineHeight: 20
+              }}>Events on August 9, 2022</Text>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontFamily: fonts.primaryBold,
+                  fontSize: 14,
+                  lineHeight: 18,
+                  borderBottomWidth: 1
+                }}
+              >View All</Text>
+            </View>
+            <View>
+              {EventsData.map(obj => <ListItem key={obj.id} title={obj.title} subTitle={obj.subTitle} />)}
+            </View>
+          </View></> : null}
       </View>
     </ScrollView>
   )

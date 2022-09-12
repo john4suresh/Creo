@@ -5,6 +5,7 @@ import TabNavigator from './MainTabNavigator';
 import Login from '../auth/Login';
 import HomeView from '../home/HomeView';
 import Attendance from '../home/Attendance';
+import HomeWork from '../home/HomeWork';
 
 
 
@@ -43,6 +44,10 @@ const StackNavigationData = [
   {
     name: 'Attendance',
     component: Attendance,
+  },
+  {
+    name: 'HomeWork',
+    component: HomeWork,
   },
 ];
 

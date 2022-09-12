@@ -43,7 +43,7 @@ const Reports = ({ navigation }) => {
       <View style={{ flex: 1 }}>
         <VStack space={3} style={{}}>
           <HStack justifyContent="space-between">
-            <IconGroup title="Attendance" icon={<Attendance width={width} height={width} onPress={navigation.navigate('Attendance')} />} />
+            <IconGroup title="Attendance" icon={<Attendance width={width} height={width} onPress={() => navigation.navigate('Attendance')} />} />
             <IconGroup title="Home Works" icon={<HomeWorks width={width} height={width} />} />
             <IconGroup title="Behaviour" icon={<Behaviour width={width} height={width} />} />
           </HStack>
